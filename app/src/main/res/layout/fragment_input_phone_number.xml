@@ -44,9 +44,13 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/phoneNumberEditText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="12dp"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:maxLength="15"
             android:background="@color/transparent"
             android:textColor="@color/edit_text_text_color"
             android:textSize="35sp"
@@ -56,6 +60,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/submitButton"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="40dp"

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/app_white"
+    tools:context=".fragment.InputCodeFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Код подтверждения отправлен на телефон +7 (999) 000-00-00"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:maxLength="4"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:hint="Введите код подтверждения"
+        android:textColorHint="@color/app_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Обратите внимание, что иногда СМС приходят с задержкой"
+        android:textColor="@color/app_gray"
+        android:textSize="16sp"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:enabled="false"
+        android:background="@drawable/button_background"
+        android:text="Подтвердить"
+        android:textColor="@color/button_text_color"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="21dp"
+        android:enabled="false"
+        android:background="@drawable/button_background"
+        android:text="Повторить через 59 сек."
+        android:textColor="@color/button_text_color"
+        android:textSize="16sp"
+        android:textAllCaps="false" />
+
+</LinearLayout>

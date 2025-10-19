@@ -7,6 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import ru.rmzn.real2.databinding.ActivityStartBinding
+import ru.rmzn.real2.fragment.InputCodeFragment
 import ru.rmzn.real2.fragment.InputPhoneNumberFragment
 import ru.rmzn.real2.fragment.SplashFragment
 import ru.rmzn.real2.navigation.FragmentNavigation
@@ -17,6 +18,7 @@ class StartActivity : AppCompatActivity() {
     private val fragmentNavigation by lazy { FragmentNavigation(this, R.id.fragmentContainerView) }
     private val splashFragment by lazy { SplashFragment() }
     private val inputPhoneNumberFragment by lazy { InputPhoneNumberFragment() }
+    private val inputCodeFragment by lazy { InputCodeFragment() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,5 +41,9 @@ class StartActivity : AppCompatActivity() {
 
     fun navigateToInputPhoneNumberFragment() {
         fragmentNavigation.navigate(inputPhoneNumberFragment)
+    }
+
+    fun navigateToInputCodeFragment() {
+        fragmentNavigation.navigate(inputCodeFragment)
     }
 }
